@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Barra superior */
+.top-bar {
+    background-color: #302c3c;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 60px;
+}
+
+.logo {
+    height: 40px;
+}
+
+.top-bar h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.developer {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+/* Barra de navegación */
+.nav-bar {
+    background-color: #4054fc;
+    display: flex;
+    justify-content: center;
+}
+
+.tab-button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.tab-button:hover, .tab-button.active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Contenido de pestañas */
+.tab-content {
+    margin-top: 20px;
+}
+
+textarea {
+    width: 80%;
+    height: 150px;
+    margin: 10px 0;
+    font-size: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

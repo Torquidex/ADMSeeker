@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Comandos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra superior -->
+    <div class="top-bar">
+        <img src="https://media.licdn.com/dms/image/v2/D4E0BAQFiXRwW-rjeSg/company-logo_200_200/company-logo_200_200/0/1698742959190/airenetworks_logo?e=2147483647&v=beta&t=g3gWgTrXgOtsmKAyA2tpvkQwyCEKu3Eb_NcAKI16AV0" alt="Aire Networks Logo" class="logo">
+        <h1>ADM SEEKER</h1>
+        <span class="developer">Developed by: Antonio Seller López</span>
+    </div>
+
+    <!-- Barra de navegación -->
+    <div class="nav-bar">
+        <button class="tab-button active" onclick="showTab('textCode')">ADM Text Code</button>
+        <button class="tab-button" onclick="showTab('resolve')">ADM Resolve</button>
+    </div>
+
+    <!-- Contenido de ADM Text Code -->
+    <div id="textCode" class="tab-content">
+        <h2>Introduce los números:</h2>
+        <textarea id="inputNumbers" placeholder="Escribe los números aquí..." rows="10"></textarea>
+        <button onclick="generarComandos()">Generar Comandos</button>
+        
+        <h2>Resultados:</h2>
+        <textarea id="outputResults" readonly rows="10"></textarea>
+    </div>
+
+    <!-- Contenido de ADM Resolve -->
+    <div id="resolve" class="tab-content" style="display: none;">
+        <h2>Pega aquí la respuesta del MX480:</h2>
+        <textarea id="inputResolve" placeholder="Pega aquí la respuesta..." rows="10"></textarea>
+        <button onclick="procesarAfectacion()">Procesar</button>
+    
+        <h2>Afectación:</h2>
+        <textarea id="outputAfectacion" readonly rows="10"></textarea>
+
+        <!-- Contador de BITAs omitidas -->
+        <h3>Contador de BITAs omitidas: <span id="contadorBITA">0</span></h3>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
